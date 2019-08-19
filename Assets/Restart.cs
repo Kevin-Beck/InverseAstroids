@@ -7,6 +7,7 @@ public class Restart : MonoBehaviour
 {
     public void RestartGame()
     {
+        CancelInvoke();
         SceneManager.LoadScene(0);
     }
 }
