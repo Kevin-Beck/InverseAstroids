@@ -1101,6 +1101,7 @@ MonoBehaviour:
   brain: {fileID: 3181997876148854657}
   projectile: {fileID: 7763383734907356893, guid: 1e80330c4d5e06d448e72f25f3b1f040,
     type: 3}
+  charge: {fileID: 1560069860064298039, guid: 31df24d71f913384897dd1481339f3ef, type: 3}
   projectileDistance: -2.5
   speed: 250
   turn: 10

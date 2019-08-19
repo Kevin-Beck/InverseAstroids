@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
+  goTime: 0.2
   aliveTime: 4
   secondaryProjectile: {fileID: 7763383734907356893, guid: 3640886eb89eedb4ab8e19ce015d9a88,
     type: 3}

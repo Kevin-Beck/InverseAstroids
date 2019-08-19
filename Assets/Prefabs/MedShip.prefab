@@ -1105,7 +1105,7 @@ MonoBehaviour:
   speed: 250
   turn: 10
   shootWhenTargetted: 1
-  shootCooldown: 0.1
+  shootCooldown: 0.4
   descendSpeed: 10
   shield: {fileID: 7819230453209160029}
 --- !u!114 &3181997876148854657

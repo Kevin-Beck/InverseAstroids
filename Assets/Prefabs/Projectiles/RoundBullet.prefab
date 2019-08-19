@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1000
+  goTime: 0.3
   aliveTime: 2
   secondaryProjectile: {fileID: 0}
   hasSecondaryProjectile: 0

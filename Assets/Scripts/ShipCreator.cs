@@ -23,7 +23,7 @@ public class ShipCreator : MonoBehaviour
     }
     public void DelayedAddMedShip()
     {
-        Invoke("AddMedShip", 3);
+        Invoke("AddMedShip", 1);
     }
 
     public void AddLittleShip()

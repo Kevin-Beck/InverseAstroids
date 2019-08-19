@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5255adc69b01e946b842c8d27512bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: {x: 0, y: 0, z: 2}
+  teleportOffset: {x: 0, y: 0, z: 1}
 --- !u!1 &454491212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5255adc69b01e946b842c8d27512bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: {x: -2, y: 0, z: 0}
+  teleportOffset: {x: -1, y: 0, z: 0}
 --- !u!1 &926769789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5255adc69b01e946b842c8d27512bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: {x: 2, y: 0, z: 0}
+  teleportOffset: {x: 1, y: 0, z: 0}
 --- !u!1 &1142413572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,15 +1526,15 @@ RectTransform:
   m_GameObject: {fileID: 1258507265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 315726726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0.5}
-  m_SizeDelta: {x: 3466.7, y: 1950}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2500, y: 1800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258507267
 MonoBehaviour:
@@ -1635,7 +1635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339578892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8453245, y: 48.132015, z: -25.595163}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1668,17 +1668,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339578893}
-        m_MethodName: DelayedAddMedShip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1339578896
@@ -1699,17 +1688,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1339578893}
         m_MethodName: AddLittleShip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1339578893}
-        m_MethodName: DelayedAddLittleShip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1832,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5255adc69b01e946b842c8d27512bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportOffset: {x: 0, y: 0, z: -2}
+  teleportOffset: {x: 0, y: 0, z: -1}
 --- !u!64 &1521343000
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2688,7 +2666,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082

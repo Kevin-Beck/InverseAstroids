@@ -5,6 +5,7 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public float speed;
+    public float goTime;
     public float aliveTime;
     public GameObject secondaryProjectile;
     public bool hasSecondaryProjectile;
@@ -13,7 +14,7 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+        Invoke("StartMovement", goTime);
         Invoke("SelfDestruct", aliveTime);
     }
 
@@ -25,7 +26,11 @@ public class bullet : MonoBehaviour
         }
         Destroy(gameObject);
     }
-
+    private void StartMovement()
+    {
+        transform.parent = null;
+        GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")

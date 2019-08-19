@@ -101,21 +101,26 @@ public class Ship : MonoBehaviour
     {
         rb.AddTorque(Vector3.up * turn);
     }
+
     public void Shoot()
     {
         if (shootWhenTargetted)
         {
-            Instantiate(projectile, transform.position + transform.forward * projectileDistance, transform.rotation);
+            GameObject go = Instantiate(projectile, transform.position + transform.forward * projectileDistance, transform.rotation);
+            go.transform.parent = gameObject.transform;
             shootWhenTargetted = false;
             Invoke("ResetShootCooldown", shootCooldown);
         }
     }
+
     public void ResetShootCooldown()
     {
         shootWhenTargetted = true;
     }
     private void OnDestroy()
     {
+        CancelInvoke("Fire");
         myDeath.Raise();
     }
+    
 }
